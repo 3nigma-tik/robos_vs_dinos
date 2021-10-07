@@ -1,13 +1,17 @@
 from robots import Robot
+from robots import Robot
+from weapons import Weapon
+
 
 class Fleet:
     def __init__(self):
-        self.robots = []
-        return 
+        self.robots = [] 
     
     def create_fleet(self):
-        robo_one = Robot("Chucky Chomper", 55, 300)
-        robo_two = Robot("Sally Spikes", 45, 500)
-        robo_three = Robot("Timmy Teeth", 50, 250)
-        robo_four = Robot("Doug", 30, 250)
+        robo_one = Robot("Debrabot 5000", 350, Weapon())
+        robo_two = Robot("Paranoid Marvin", 200, Weapon())
+        robo_three = Robot("Hal", 400, Weapon())
+        robo_four = Robot("Siri", 250, Weapon())
         return robo_one and robo_two and robo_three and robo_four 
+        
+        
